@@ -12,4 +12,3 @@ app.MapGet("/", () =>
 });
 
 app.Run();
-
