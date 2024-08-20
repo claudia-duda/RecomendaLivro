@@ -3,7 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro\\account\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|solutionrelative:account\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro\\account\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|solutionrelative:account\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro\\account - c\u00F3pia\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|solutionrelative:account - c\u00F3pia\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro\\account - c\u00F3pia\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|solutionrelative:account - c\u00F3pia\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92486B0-819A-4A22-AB37-52803F5D7238}|..\\RecomendaLivro.Shared.Models\\RecomendaLivro.Shared.Models.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.shared.models\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92486B0-819A-4A22-AB37-52803F5D7238}|..\\RecomendaLivro.Shared.Models\\RecomendaLivro.Shared.Models.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.shared.models\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{80197BC2-795D-43CF-8F7B-C3F55D7FC5D5}|..\\RecomendaLivro.API\\RecomendaLivro.API.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80197BC2-795D-43CF-8F7B-C3F55D7FC5D5}|..\\RecomendaLivro.API\\RecomendaLivro.API.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA300718-53A8-47CA-B998-23CE8BA82D0A}|..\\RecomendaLivro.Shared.Data\\RecomendaLivro.Shared.Data.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.shared.data\\database\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -12,14 +37,8 @@
       "AbsoluteMoniker": "D:0:0:{BA300718-53A8-47CA-B998-23CE8BA82D0A}|..\\RecomendaLivro.Shared.Data\\RecomendaLivro.Shared.Data.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.shared.data\\database\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D92486B0-819A-4A22-AB37-52803F5D7238}|..\\RecomendaLivro.Shared.Models\\RecomendaLivro.Shared.Models.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.shared.models\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro\\recomendalivro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.csproj|solutionrelative:recomendalivro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D92486B0-819A-4A22-AB37-52803F5D7238}|..\\RecomendaLivro.Shared.Models\\RecomendaLivro.Shared.Models.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro.shared.models\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|c:\\users\\18443\\documents\\faculdade\\recomendalivro\\recomendalivro\\recomendalivro.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0AFE76DC-BC03-4808-B6E6-F493599FC804}|RecomendaLivro.Domain.csproj|solutionrelative:recomendalivro.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 51,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,7 +88,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Account\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account\\Services\\AccountService.cs",
+              "RelativeToolTip": "Account\\Services\\AccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T23:40:00.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account - C\u00F3pia\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "Account - C\u00F3pia\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account - C\u00F3pia\\Services\\BookService.cs",
+              "RelativeToolTip": "Account - C\u00F3pia\\Services\\BookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T23:44:32.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account - C\u00F3pia\\Services\\IBookService.cs",
+              "RelativeDocumentMoniker": "Account - C\u00F3pia\\Services\\IBookService.cs",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account - C\u00F3pia\\Services\\IBookService.cs",
+              "RelativeToolTip": "Account - C\u00F3pia\\Services\\IBookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T23:44:07.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account\\Services\\IAccountService.cs",
+              "RelativeDocumentMoniker": "Account\\Services\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\Account\\Services\\IAccountService.cs",
+              "RelativeToolTip": "Account\\Services\\IAccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T23:39:23.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\RecomendaLivro.API\\Program.cs",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.API\\Program.cs",
+              "RelativeToolTip": "..\\RecomendaLivro.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T14:52:48.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\RecomendaLivro.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.API\\appsettings.json",
+              "RelativeToolTip": "..\\RecomendaLivro.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-19T12:42:16.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "DataBaseContext.cs",
               "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Data\\DataBase\\DataBaseContext.cs",
               "RelativeDocumentMoniker": "..\\RecomendaLivro.Shared.Data\\DataBase\\DataBaseContext.cs",
@@ -82,38 +179,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "DAL.cs",
               "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Data\\DataBase\\DAL.cs",
               "RelativeDocumentMoniker": "..\\RecomendaLivro.Shared.Data\\DataBase\\DAL.cs",
               "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Data\\DataBase\\DAL.cs",
               "RelativeToolTip": "..\\RecomendaLivro.Shared.Data\\DataBase\\DAL.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAiAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAABQwBIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T14:53:59.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.API\\Program.cs",
-              "RelativeDocumentMoniker": "..\\RecomendaLivro.API\\Program.cs",
-              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.API\\Program.cs",
-              "RelativeToolTip": "..\\RecomendaLivro.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T14:52:48.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RecomendaLivro",
-              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\RecomendaLivro.csproj",
-              "RelativeDocumentMoniker": "RecomendaLivro.csproj",
-              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\RecomendaLivro.csproj",
-              "RelativeToolTip": "RecomendaLivro.csproj",
+              "DocumentIndex": 10,
+              "Title": "RecomendaLivro.csproj",
+              "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\RecomendaLivro.Domain.csproj",
+              "RelativeDocumentMoniker": "RecomendaLivro.Domain.csproj",
+              "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro\\RecomendaLivro.Domain.csproj",
+              "RelativeToolTip": "RecomendaLivro.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-08-17T14:49:23.648Z",
@@ -121,26 +205,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Models\\Models\\Book.cs",
               "RelativeDocumentMoniker": "..\\RecomendaLivro.Shared.Models\\Models\\Book.cs",
               "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Models\\Models\\Book.cs",
               "RelativeToolTip": "..\\RecomendaLivro.Shared.Models\\Models\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T14:44:34.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Models\\Models\\Account.cs",
               "RelativeDocumentMoniker": "..\\RecomendaLivro.Shared.Models\\Models\\Account.cs",
               "ToolTip": "C:\\Users\\18443\\Documents\\faculdade\\RecomendaLivro\\RecomendaLivro.Shared.Models\\Models\\Account.cs",
               "RelativeToolTip": "..\\RecomendaLivro.Shared.Models\\Models\\Account.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T14:43:40.419Z",
               "EditorCaption": ""

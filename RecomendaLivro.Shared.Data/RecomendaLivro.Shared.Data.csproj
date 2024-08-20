@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RecomendaLivro.Shared.Models\RecomendaLivro.Shared.Models.csproj" />
+    <ProjectReference Include="..\RecomendaLivro.Shared.Models\RecomendaLivro.Shared.Adapter.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecomendaLivro", "RecomendaLivro.csproj", "{0AFE76DC-BC03-4808-B6E6-F493599FC804}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecomendaLivro.Domain", "RecomendaLivro.Domain.csproj", "{0AFE76DC-BC03-4808-B6E6-F493599FC804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecomendaLivro.API", "..\RecomendaLivro.API\RecomendaLivro.API.csproj", "{80197BC2-795D-43CF-8F7B-C3F55D7FC5D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecomendaLivro.Presentation.Application", "..\RecomendaLivro.API\RecomendaLivro.Presentation.Application.csproj", "{80197BC2-795D-43CF-8F7B-C3F55D7FC5D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecomendaLivro.Shared.Models", "..\RecomendaLivro.Shared.Models\RecomendaLivro.Shared.Models.csproj", "{D92486B0-819A-4A22-AB37-52803F5D7238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecomendaLivro.Shared.Adapter", "..\RecomendaLivro.Shared.Models\RecomendaLivro.Shared.Adapter.csproj", "{D92486B0-819A-4A22-AB37-52803F5D7238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecomendaLivro.Shared.Data", "..\RecomendaLivro.Shared.Data\RecomendaLivro.Shared.Data.csproj", "{BA300718-53A8-47CA-B998-23CE8BA82D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecomendaLivro.Shared.Data", "..\RecomendaLivro.Shared.Data\RecomendaLivro.Shared.Data.csproj", "{BA300718-53A8-47CA-B998-23CE8BA82D0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

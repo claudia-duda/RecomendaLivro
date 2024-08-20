@@ -10,4 +10,8 @@
     <ProjectReference Include="..\RecomendaLivro.Shared.Data\RecomendaLivro.Shared.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\NovaPasta\" />
+  </ItemGroup>
+  
 </Project>

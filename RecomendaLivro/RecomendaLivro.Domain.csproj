@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RecomendaLivro.API\RecomendaLivro.API.csproj" />
+    <ProjectReference Include="..\RecomendaLivro.API\RecomendaLivro.Presentation.Application.csproj" />
     <ProjectReference Include="..\RecomendaLivro.Shared.Data\RecomendaLivro.Shared.Data.csproj" />
-    <ProjectReference Include="..\RecomendaLivro.Shared.Models\RecomendaLivro.Shared.Models.csproj" />
+    <ProjectReference Include="..\RecomendaLivro.Shared.Models\RecomendaLivro.Shared.Adapter.csproj" />
   </ItemGroup>
 
 </Project>

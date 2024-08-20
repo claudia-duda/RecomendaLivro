@@ -4,6 +4,7 @@
     {
         public string UserName { get; set; }
         public int Id { get; set; }
+        public List<Book> books { get; set; }
 
         public Account(string userName, int id)
         {
