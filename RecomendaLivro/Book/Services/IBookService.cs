@@ -1,6 +1,6 @@
-﻿namespace RecomendaLivro.Domain.Account
+﻿namespace RecomendaLivro.Domain.Book
 {
-    public interface IAccountService
+    public interface IBookService
     {
 
     }

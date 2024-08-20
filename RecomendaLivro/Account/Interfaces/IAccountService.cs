@@ -1,4 +1,4 @@
-﻿namespace RecomendaLivro.Domain.Account
+﻿namespace RecomendaLivro.Domain.Account.Interfaces
 {
     public interface IAccountService
     {

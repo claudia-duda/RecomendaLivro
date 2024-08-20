@@ -1,6 +1,4 @@
-﻿using RecomendaLivro.Domain.Account;
-
-namespace BSF.Retail.Domain.CardDelivery
+﻿namespace RecomendaLivro.Domain.Book
 {
     public class BookService : IBookService
     {
