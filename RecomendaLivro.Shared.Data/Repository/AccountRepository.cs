@@ -1,4 +1,5 @@
-﻿using RecomendaLivroApi.Domain.Interface;
+﻿using RecomendaLivro.Domain.Account.Interfaces;
+using RecomendaLivro.Domain.Account.Models;
 
 namespace RecomendaLivro.Shared.Data.Repository
 {
@@ -6,12 +7,12 @@ namespace RecomendaLivro.Shared.Data.Repository
     {
         private readonly string _collection; // TODO: insert  database
 
-        public Task GetAsync(Account account)
+        public Task GetAsync(AccountModel account)
         {
             throw new NotImplementedException();
         }
 
-        public Task SaveAsync(Account account)
+        public Task SaveAsync(AccountModel account)
         {
             throw new NotImplementedException();
         }
