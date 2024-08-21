@@ -1,10 +1,10 @@
-﻿using RecomendaLivroApi.Domain.Interface;
+﻿using RecomendaLivro.Domain.Account.Models;
 
-namespace RecomendaLivro.Shared.Data.Repository
+namespace RecomendaLivro.Domain.Account.Interfaces
 {
     public interface IAccountRepository
     {
-        public Task SaveAsync(Account account);
-        public Task GetAsync(Account account);
+        public Task SaveAsync(AccountModel account);
+        public Task GetAsync(AccountModel account);
     }
 }

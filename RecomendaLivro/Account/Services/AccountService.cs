@@ -1,7 +1,6 @@
 ﻿using RecomendaLivro.Domain.Account.Interfaces;
-using RecomendaLivro.Shared.Data.Repository;
 
-namespace RecomendaLivro.Domain.Account
+namespace RecomendaLivro.Domain.Account.Services
 {
     public class AccountService : IAccountService
     {
@@ -9,7 +8,7 @@ namespace RecomendaLivro.Domain.Account
 
         public AccountService(IAccountRepository accountRepository)
         {
-             _accountRepository = accountRepository;
+            _accountRepository = accountRepository;
         }
 
     }
