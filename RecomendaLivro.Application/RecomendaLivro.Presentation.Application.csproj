@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RecomendaLivro.Shared.Data\RecomendaLivro.Shared.Data.csproj" />
-    <ProjectReference Include="..\RecomendaLivro\RecomendaLivro.Domain.csproj" />
   </ItemGroup>
 
 </Project>
