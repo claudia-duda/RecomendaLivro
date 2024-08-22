@@ -8,7 +8,7 @@ public class DAL<T> where T : class
         this.context = context;
     }
 
-    public IEnumerable<T> Listar()
+    public IEnumerable<T> List()
     {
         return context.Set<T>().ToList();
     }

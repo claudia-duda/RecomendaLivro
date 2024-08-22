@@ -7,12 +7,12 @@ namespace RecomendaLivro.Shared.Data.Repository
     {
         private readonly string _collection; // TODO: insert  database
 
-        public Task GetAsync(AccountModel account)
+        public Task GetAsync(Account account)
         {
             throw new NotImplementedException();
         }
 
-        public Task SaveAsync(AccountModel account)
+        public Task SaveAsync(Account account)
         {
             throw new NotImplementedException();
         }

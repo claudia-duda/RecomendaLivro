@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using RecomendaLivro.Domain.Account.Models;
-using RecomendaLivro.Domain.Book.Models;
 using RecomendaLivro.Presentation.Application.Controllers;
 using RecomendaLivro.Shared.Data;
 using RecomendaLivro.Shared.Data.DataBase;
@@ -15,8 +14,7 @@ builder.Services.AddIdentityApiEndpoints<UserAuthorized>().AddEntityFrameworkSto
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddTransient<DAL<AccountModel>>();
-builder.Services.AddTransient<DAL<BookModel>>();
+builder.Services.AddTransient<DAL<Account>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

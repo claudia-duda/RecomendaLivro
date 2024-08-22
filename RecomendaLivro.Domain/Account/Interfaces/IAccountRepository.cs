@@ -4,7 +4,7 @@ namespace RecomendaLivro.Domain.Account.Interfaces
 {
     public interface IAccountRepository
     {
-        public Task SaveAsync(AccountModel account);
-        public Task GetAsync(AccountModel account);
+        public Task SaveAsync(Models.Account account);
+        public Task GetAsync(Models.Account account);
     }
 }

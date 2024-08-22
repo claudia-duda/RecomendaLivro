@@ -6,8 +6,8 @@ namespace RecomendaLivro.Shared.Data.DataBase
 {
     public class AppDbContext : IdentityDbContext<UserAuthorized, Profile, int>
     {
-        public DbSet<AccountModel> Account { get; set; }
-        private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ScreenSoundV0;Integrated Security=True;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+        public DbSet<Account> Account { get; set; }
+        private string connectionString = "Data Source=(localdb)\\ProjectModels;Initial Catalog=RecomendaLivro;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
         public AppDbContext()
         {
@@ -31,7 +31,7 @@ namespace RecomendaLivro.Shared.Data.DataBase
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<AccountModel>();
+            modelBuilder.Entity<Account>();
         }
     }
 

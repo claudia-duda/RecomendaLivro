@@ -15,9 +15,9 @@ namespace RecomendaLivro.Presentation.Application.Controllers
                 .WithTags("Accounts");
 
             #region Endpoint Accounts
-            groupBuilder.MapGet("", ([FromServices] DAL<AccountModel> dal) =>
+            groupBuilder.MapGet("", ([FromServices] DAL<Account> dal) =>
             {
-                var listaDeAccounts = dal.Listar();
+                var listaDeAccounts = dal.List();
                 if (listaDeAccounts is null)
                 {
                     return Results.NotFound();
@@ -26,7 +26,7 @@ namespace RecomendaLivro.Presentation.Application.Controllers
                 return Results.Ok(listaDeAccountResponse);
             }).RequireAuthorization();
 
-            groupBuilder.MapGet("{nome}", ([FromServices] DAL<AccountModel> dal, string nome) =>
+            groupBuilder.MapGet("{nome}", ([FromServices] DAL<Account> dal, string nome) =>
             {
                 var Account = dal.RecoverBy(a => a.Nome.ToUpper().Equals(nome.ToUpper()));
                 if (Account is null)
@@ -37,26 +37,17 @@ namespace RecomendaLivro.Presentation.Application.Controllers
 
             });
 
-            groupBuilder.MapPost("", async ([FromServices] IHostEnvironment env, [FromServices] DAL<AccountModel> dal, [FromBody] AccountRequest AccountRequest) =>
+            groupBuilder.MapPost("", async ([FromServices] IHostEnvironment env, [FromServices] DAL<Account> dal, [FromBody] AccountRequest AccountRequest) =>
             {
 
                 var nome = AccountRequest.nome.Trim();
-                var imagemAccount = DateTime.Now.ToString("ddMMyyyyhhss") + "." + nome + ".jpg";
-
-                var path = Path.Combine(env.ContentRootPath,
-                    "wwwroot", "FotosPerfil", imagemAccount);
-
-                using MemoryStream ms = new MemoryStream(Convert.FromBase64String(AccountRequest.fotoPerfil!));
-                using FileStream fs = new(path, FileMode.Create);
-                await ms.CopyToAsync(fs);
-
-                var Account = new AccountModel(AccountRequest.nome, AccountRequest.bio) { FotoPerfil = $"/FotosPerfil/{imagemAccount}" };
+                var Account = new Account(AccountRequest.nome, AccountRequest.book);
 
                 dal.Add(Account);
                 return Results.Ok();
             });
 
-            groupBuilder.MapDelete("{id}", ([FromServices] DAL<AccountModel> dal, int id) =>
+            groupBuilder.MapDelete("{id}", ([FromServices] DAL<Account> dal, int id) =>
             {
                 var Account = dal.RecoverBy(a => a.Id == id);
                 if (Account is null)
@@ -68,7 +59,7 @@ namespace RecomendaLivro.Presentation.Application.Controllers
 
             });
 
-            groupBuilder.MapPut("", ([FromServices] DAL<AccountModel> dal, [FromBody] AccountRequestEdit AccountRequestEdit) =>
+            groupBuilder.MapPut("", ([FromServices] DAL<Account> dal, [FromBody] AccountRequestEdit AccountRequestEdit) =>
             {
                 var AccountAAtualizar = dal.RecoverBy(a => a.Id == AccountRequestEdit.Id);
                 if (AccountAAtualizar is null)
@@ -76,21 +67,20 @@ namespace RecomendaLivro.Presentation.Application.Controllers
                     return Results.NotFound();
                 }
                 AccountAAtualizar.Nome = AccountRequestEdit.nome;
-                AccountAAtualizar.Bio = AccountRequestEdit.bio;
                 dal.Update(AccountAAtualizar);
                 return Results.Ok();
             });
             #endregion
         }
 
-        private static ICollection<AccountResponse> EntityListToResponseList(IEnumerable<AccountModel> listaDeAccounts)
+        private static ICollection<AccountResponse> EntityListToResponseList(IEnumerable<Account> listaDeAccounts)
         {
             return listaDeAccounts.Select(a => EntityToResponse(a)).ToList();
         }
 
-        private static AccountResponse EntityToResponse(AccountModel Account)
+        private static AccountResponse EntityToResponse(Account Account)
         {
-            return new AccountResponse(Account.Id, Account.Nome, Account.Bio, Account.FotoPerfil);
+            return new AccountResponse(Account.Id, Account.Nome, Account.Book);
         }
 
 
