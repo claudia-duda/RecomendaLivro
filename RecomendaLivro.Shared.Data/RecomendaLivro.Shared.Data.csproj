@@ -25,5 +25,9 @@
   <ItemGroup>
     <ProjectReference Include="..\RecomendaLivro.Domain\RecomendaLivro.Domain.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
   
 </Project>

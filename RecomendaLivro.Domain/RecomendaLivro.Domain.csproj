@@ -12,4 +12,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Book\Interfaces\" />
+    <Folder Include="Book\Services\" />
+  </ItemGroup>
+
 </Project>
