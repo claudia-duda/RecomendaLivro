@@ -1,3 +1,3 @@
 ﻿namespace RecomendaLivro.Presentation.Application.Controllers.Response;
 
-public record AccountResponse(int Id, string Nome, string? Book);
+public record BookResponse(string Id, string Name, string? Book);

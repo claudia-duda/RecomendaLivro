@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using RecomendaLivro.Domain.Account.Models;
+using RecomendaLivro.Domain.Book.Models;
 
 namespace RecomendaLivro.Shared.Data.DataBase
 {
     public class AppDbContext : IdentityDbContext<UserAuthorized, Profile, int>
     {
-        public DbSet<Account> Account { get; set; }
+        public DbSet<Book> Book { get; set; }
         private string connectionString = "Data Source=(localdb)\\ProjectModels;Initial Catalog=RecomendaLivro;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
         public AppDbContext()
@@ -31,7 +31,7 @@ namespace RecomendaLivro.Shared.Data.DataBase
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Account>();
+            modelBuilder.Entity<Book>();
         }
     }
 

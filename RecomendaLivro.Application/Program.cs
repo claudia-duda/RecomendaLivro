@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using RecomendaLivro.Domain.Account.Models;
+using RecomendaLivro.Domain.Book.Models;
 using RecomendaLivro.Presentation.Application.Controllers;
 using RecomendaLivro.Shared.Data;
 using RecomendaLivro.Shared.Data.DataBase;
@@ -14,7 +14,7 @@ builder.Services.AddIdentityApiEndpoints<UserAuthorized>().AddEntityFrameworkSto
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddTransient<DAL<Account>>();
+builder.Services.AddTransient<DAL<Book>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -39,7 +39,7 @@ app.UseCors("wasm");
 app.UseStaticFiles();
 app.UseAuthorization();
 
-app.AddEndPointsAccounts();
+app.AddEndPointsBooks();
 
 app.MapGroup("auth").MapIdentityApi<UserAuthorized>().WithTags("Authorized");
 
