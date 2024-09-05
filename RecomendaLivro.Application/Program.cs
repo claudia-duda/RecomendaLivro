@@ -17,6 +17,7 @@ builder.Services.AddIdentityApiEndpoints<UserAuthorized>().AddEntityFrameworkSto
 builder.Services.AddAuthorization();
 
 builder.Services.AddTransient<DAL<Book>>();
+builder.Services.AddTransient<DAL<UserAuthorized>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

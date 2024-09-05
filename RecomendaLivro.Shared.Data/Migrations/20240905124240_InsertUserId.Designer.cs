@@ -12,8 +12,8 @@ using RecomendaLivro.Shared.Data.DataBase;
 namespace RecomendaLivro.Shared.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240827003916_StartBook")]
-    partial class StartBook
+    [Migration("20240905124240_InsertUserId")]
+    partial class InsertUserId
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -128,7 +128,7 @@ namespace RecomendaLivro.Shared.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("RecomendaLivro.Domain.Account.Models.Book", b =>
+            modelBuilder.Entity("RecomendaLivro.Domain.Book.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -148,9 +148,12 @@ namespace RecomendaLivro.Shared.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Account");
+                    b.ToTable("Book");
                 });
 
             modelBuilder.Entity("RecomendaLivro.Shared.Data.Profile", b =>
