@@ -2,7 +2,9 @@
 using RecomendaLivro.Domain.Book.Models;
 using RecomendaLivro.Presentation.Application.Controllers.Request;
 using RecomendaLivro.Presentation.Application.Controllers.Response;
+using RecomendaLivro.Shared.Data;
 using RecomendaLivro.Shared.Data.DataBase;
+using System.Security.Claims;
 
 namespace RecomendaLivro.Presentation.Application.Controllers
 {
@@ -16,15 +18,26 @@ namespace RecomendaLivro.Presentation.Application.Controllers
                 .WithTags("Book");
 
             #region Endpoint Books
-            groupBuilder.MapGet("", ([FromServices] DAL<Book> dal) =>
+
+            groupBuilder.MapGet("PersonalReadedBook", (
+                HttpContext context,
+                [FromServices] DAL<Book> dal,
+                [FromServices] DAL<UserAuthorized> dalUser) =>
             {
+                var email = context.User.Claims
+                   .FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value ?? throw new InvalidOperationException("Usuário não logado");
+
+                var user = dalUser.RecoverBy(u => u.Email.Equals(email)) ?? throw new InvalidOperationException("Usuário não logado");
+
                 var listaDeBooks = dal.List();
+
                 if (listaDeBooks is null)
                 {
                     return Results.NotFound();
                 }
-                var booklist = EntityListToResponseList(listaDeBooks);
+                var booklist = EntityListToResponseList(listaDeBooks, user.Id);
                 return Results.Ok(booklist);
+
             }).RequireAuthorization();
 
             groupBuilder.MapGet("{name}", ([FromServices] DAL<Book> dal, string name) =>
@@ -38,19 +51,35 @@ namespace RecomendaLivro.Presentation.Application.Controllers
 
             }).RequireAuthorization();
 
-            groupBuilder.MapPost("", async ([FromServices] IHostEnvironment env, [FromServices] DAL<Book> dal, [FromBody] BookRequest BookRequest) =>
+            groupBuilder.MapPost("", async (
+                HttpContext context, 
+                [FromServices] IHostEnvironment env, 
+                [FromServices] DAL<Book> dal,
+                [FromServices] DAL < UserAuthorized > dalUser,
+                [FromBody] BookRequest BookRequest) =>
             {
+                var email = context.User.Claims
+                    .FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value ?? throw new InvalidOperationException("Usuário não logado");
+
+                var user = dalUser.RecoverBy(u => u.Email.Equals(email)) ?? throw new InvalidOperationException("Usuário não logado");
 
                 var nome = BookRequest.nome.Trim();
-                var Book = new Book(BookRequest.nome, BookRequest.imageUrl);
+
+                var Book = new Book(BookRequest.nome, BookRequest.imageUrl, user.Id);
                 
                 dal.Add(Book);
-                return Results.Ok();
+                return Results.Created();
             }).RequireAuthorization();
 
-            groupBuilder.MapDelete("{id}", ([FromServices] DAL<Book> dal, string id) =>
+            groupBuilder.MapDelete("{id}", (HttpContext context, [FromServices] DAL<UserAuthorized> dalUser, [FromServices] DAL<Book> dal, string id) =>
             {
-                var Book = dal.RecoverBy(a => a.BookIdentification == id);
+                var email = context.User.Claims
+                   .FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value ?? throw new InvalidOperationException("Usuário não logado");
+
+                var user = dalUser.RecoverBy(u => u.Email.Equals(email)) ?? throw new InvalidOperationException("Usuário não logado");
+
+                var Book = dal.RecoverBy(a => a.BookIdentification == id && a.UserId == user.Id);
+
                 if (Book is null)
                 {
                     return Results.NotFound();
@@ -76,9 +105,9 @@ namespace RecomendaLivro.Presentation.Application.Controllers
             #endregion
         }
 
-        private static ICollection<BookResponse> EntityListToResponseList(IEnumerable<Book> BookList)
+        private static ICollection<BookResponse> EntityListToResponseList(IEnumerable<Book> BookList, int userId)
         {
-            return BookList.Select(a => EntityToResponse(a)).ToList();
+            return BookList.Where(b => b.UserId == userId).Select(EntityToResponse).ToList();
         }
 
         private static BookResponse EntityToResponse(Book Book)

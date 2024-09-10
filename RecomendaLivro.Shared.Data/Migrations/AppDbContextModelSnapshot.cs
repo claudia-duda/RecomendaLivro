@@ -125,7 +125,7 @@ namespace RecomendaLivro.Shared.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("RecomendaLivro.Domain.Account.Models.Book", b =>
+            modelBuilder.Entity("RecomendaLivro.Domain.Book.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -145,9 +145,12 @@ namespace RecomendaLivro.Shared.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Account");
+                    b.ToTable("Book");
                 });
 
             modelBuilder.Entity("RecomendaLivro.Shared.Data.Profile", b =>

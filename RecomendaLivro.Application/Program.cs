@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RecomendaLivro.Domain.Book.Models;
 using RecomendaLivro.Presentation.Application.Controllers;
@@ -15,6 +17,7 @@ builder.Services.AddIdentityApiEndpoints<UserAuthorized>().AddEntityFrameworkSto
 builder.Services.AddAuthorization();
 
 builder.Services.AddTransient<DAL<Book>>();
+builder.Services.AddTransient<DAL<UserAuthorized>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -40,8 +43,15 @@ app.UseStaticFiles();
 app.UseAuthorization();
 
 app.AddEndPointsBooks();
+app.AddEndPointsBookRecomendation();
 
 app.MapGroup("auth").MapIdentityApi<UserAuthorized>().WithTags("Authorized");
+
+app.MapPost("auth/logout", async ([FromServices] SignInManager<UserAuthorized> signInManager) =>
+{
+    await signInManager.SignOutAsync();
+    return Results.Ok();
+}).RequireAuthorization().WithTags("Authorized");
 
 app.UseSwagger();
 app.UseSwaggerUI();
