@@ -35,7 +35,7 @@ namespace RecomendaLivro.Presentation.Application.Controllers
                 {
                     return Results.NotFound();
                 }
-                var booklist = EntityListToResponseList(listaDeBooks);
+                var booklist = EntityListToResponseList(listaDeBooks, user.Id);
                 return Results.Ok(booklist);
 
             }).RequireAuthorization();
@@ -105,9 +105,9 @@ namespace RecomendaLivro.Presentation.Application.Controllers
             #endregion
         }
 
-        private static ICollection<BookResponse> EntityListToResponseList(IEnumerable<Book> BookList)
+        private static ICollection<BookResponse> EntityListToResponseList(IEnumerable<Book> BookList, int userId)
         {
-            return BookList.Select(a => EntityToResponse(a)).ToList();
+            return BookList.Where(b => b.UserId == userId).Select(EntityToResponse).ToList();
         }
 
         private static BookResponse EntityToResponse(Book Book)
