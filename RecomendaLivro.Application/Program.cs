@@ -24,16 +24,18 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
-builder.Services.AddCors(
-    options => options.AddPolicy(
-        "wasm",
-        policy => policy.WithOrigins([builder.Configuration["BackendUrl"] ?? "https://localhost:7089",
-            builder.Configuration["FrontendUrl"] ?? "https://localhost:7015"])
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy(name: "wasm",
+        builder =>
+        {
+            builder
             .AllowAnyMethod()
-            .SetIsOriginAllowed(pol => true)
-            .AllowAnyHeader()
-            .AllowCredentials()));
-
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowCredentials();
+        });
+});
 
 var app = builder.Build();
 
