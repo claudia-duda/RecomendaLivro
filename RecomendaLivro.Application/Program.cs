@@ -30,10 +30,9 @@ builder.Services.AddCors(opt =>
         builder =>
         {
             builder
-            .AllowAnyMethod()
-                .AllowAnyOrigin()
-                .AllowAnyHeader()
-                .AllowCredentials();
+              .AllowAnyMethod()
+              .AllowAnyOrigin()
+              .AllowAnyHeader();
         });
 });
 
